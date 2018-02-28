@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Kotlin Crypto Tracker</string>
+    <string name="price_usd">00.00</string>
+    <string name="OneHour">1hr:</string>
+    <string name="OneHourPercentage">0.00%</string>
+    <string name="TwentyFourHour">24hr:</string>
+    <string name="TwentyFourHourPercentage">0.00%</string>
+    <string name="SevenDays">7d:</string>
+    <string name="SevenDayPercentage">0.00%</string>
+</resources>

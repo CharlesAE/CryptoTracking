@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/coin_icon"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/coin_symbol"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="BTC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/coin_icon"
+        app:layout_constraintStart_toEndOf="@+id/coin_icon" />
+
+    <TextView
+        android:id="@+id/coin_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="|"
+        app:layout_constraintBottom_toBottomOf="@+id/coin_icon"
+        app:layout_constraintStart_toEndOf="@+id/coin_symbol" />
+
+    <TextView
+        android:id="@+id/coin_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Bitcoin"
+        app:layout_constraintBottom_toBottomOf="@+id/coin_icon"
+        app:layout_constraintStart_toEndOf="@+id/coin_divider" />
+
+    <TextView
+        android:id="@+id/dollar_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="4dp"
+        android:text="$"
+        app:layout_constraintBottom_toBottomOf="@+id/coin_icon"
+        app:layout_constraintEnd_toStartOf="@+id/price_usd_text" />
+
+    <TextView
+        android:id="@+id/price_usd_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/price_usd"
+        app:layout_constraintBottom_toBottomOf="@+id/coin_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/oneHour_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/OneHour"
+        app:layout_constraintStart_toEndOf="@+id/coin_icon"
+        app:layout_constraintTop_toBottomOf="@+id/coin_icon" />
+
+    <TextView
+        android:id="@+id/percent_change_1h_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/OneHourPercentage"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toEndOf="@+id/oneHour_text"
+        app:layout_constraintTop_toBottomOf="@+id/coin_icon" />
+
+    <TextView
+        android:id="@+id/twentyFourHours_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/TwentyFourHour"
+        app:layout_constraintStart_toEndOf="@+id/percent_change_1h_text"
+        app:layout_constraintTop_toBottomOf="@+id/coin_icon" />
+
+    <TextView
+        android:id="@+id/percent_change_24h_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/TwentyFourHourPercentage"
+        app:layout_constraintStart_toEndOf="@+id/twentyFourHours_text"
+        app:layout_constraintTop_toBottomOf="@+id/coin_icon" />
+
+    <TextView
+        android:id="@+id/days_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/SevenDays"
+        app:layout_constraintEnd_toStartOf="@+id/percent_change_7day_text"
+        app:layout_constraintTop_toBottomOf="@+id/coin_icon" />
+
+    <TextView
+        android:id="@+id/percent_change_7day_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/SevenDayPercentage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coin_icon" />
+
+</android.support.constraint.ConstraintLayout>
